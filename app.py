@@ -12,7 +12,7 @@ def load_preprocessor():
 
 @st.cache_resource
 def load_model():
-    return joblib.load("/Users/affanqureshi/Desktop/affan/Amazon Delivery Time Prediction/best_xgb_model.pkl")
+    return joblib.load("/Users/affanqureshi/Desktop/bvas23wedxc. vgyt678ol;:w2qa /Amazon Delivery Time Prediction/best_xgb_model.pkl")
 
 try:
     preprocessor = load_preprocessor()
