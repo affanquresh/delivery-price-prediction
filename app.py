@@ -6,6 +6,14 @@ import joblib
 # -----------------------------
 # Load Model and Preprocessor (Fixed)
 # -----------------------------
+import streamlit as st
+
+st.set_page_config(
+    page_title="Delivery Time Predictor",   # Your custom title
+    page_icon="🚚",                                # Custom favicon (emoji or image)
+    layout="wide"
+)
+
 @st.cache_resource
 def load_preprocessor():
     return joblib.load("preprocessor.pkl")
@@ -25,7 +33,7 @@ except Exception as e:
 # -----------------------------
 # Streamlit UI
 # -----------------------------
-st.title("📦 Amazon Delivery Time Prediction App")
+st.title("📦  Delivery Time Prediction App")
 st.write("Enter delivery details below to predict estimated delivery time:")
 
 # -----------------------------
