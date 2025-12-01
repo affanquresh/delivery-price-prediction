@@ -16,7 +16,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_preprocessor():
-    return joblib.load("preprocessor.pkl")
+    return joblib.load("models/preprocessor.pkl")
 
 @st.cache_resource
 def load_model():
